@@ -5,13 +5,13 @@
 class Crx3 < Formula
   desc "Chrome extension tooling: pack, unpack, download CRX3 extensions"
   homepage "https://github.com/mmadfox/go-crx3"
-  version "1.6.1"
+  version "1.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mmadfox/go-crx3/releases/download/v1.6.1/crx3_1.6.1_Darwin_x86_64.tar.gz"
-      sha256 "fd7c4f055e176a0f674fd18f53597f0f278d05b328bfa225973fb458e281074c"
+      url "https://github.com/mmadfox/go-crx3/releases/download/v1.7.0/crx3_1.7.0_Darwin_x86_64.tar.gz"
+      sha256 "f54a5ea3eb97b0ba787e4a207fe4625cf8413a6ff9b95f467b05cef002832025"
 
       define_method(:install) do
         bin.install "crx3"
@@ -22,8 +22,8 @@ class Crx3 < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mmadfox/go-crx3/releases/download/v1.6.1/crx3_1.6.1_Darwin_arm64.tar.gz"
-      sha256 "36ea2301d159ff03192e60a6399d7111adbcd15bee6590f06c262c20177d287c"
+      url "https://github.com/mmadfox/go-crx3/releases/download/v1.7.0/crx3_1.7.0_Darwin_arm64.tar.gz"
+      sha256 "dec86805d08a441e2439fdf63302731fa1f7cd2f635db23836d565de07eefda4"
 
       define_method(:install) do
         bin.install "crx3"
@@ -37,8 +37,8 @@ class Crx3 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmadfox/go-crx3/releases/download/v1.6.1/crx3_1.6.1_Linux_x86_64.tar.gz"
-      sha256 "f78b023efb39f0d28256794782f188d051e66b85927ba26902a52a9afd19c5c2"
+      url "https://github.com/mmadfox/go-crx3/releases/download/v1.7.0/crx3_1.7.0_Linux_x86_64.tar.gz"
+      sha256 "ef7878aaef1cd2dcfe3f8a79b382b459cbc843d34493f0a77d9bc5c5e8e6c611"
       define_method(:install) do
         bin.install "crx3"
         bash_completion.install "completions/crx3.bash" => "crx3"
@@ -48,8 +48,8 @@ class Crx3 < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmadfox/go-crx3/releases/download/v1.6.1/crx3_1.6.1_Linux_arm64.tar.gz"
-      sha256 "4dd886a07f91d5ecf87a052c294268fa1c40ed781304c35da50690734108071d"
+      url "https://github.com/mmadfox/go-crx3/releases/download/v1.7.0/crx3_1.7.0_Linux_arm64.tar.gz"
+      sha256 "2eb848afa670189940897321260cef531afe5c9d063976196e19abee95eff3f8"
       define_method(:install) do
         bin.install "crx3"
         bash_completion.install "completions/crx3.bash" => "crx3"
