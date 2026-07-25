@@ -11,7 +11,7 @@ class Swag2mcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.0/swag2mcp_0.1.0-alpha.0_darwin_amd64.tar.gz"
-      sha256 "5cbe4d4f12b7ebe122772e0dc0fa26447bddcaa0e409500da578f60ae703164b"
+      sha256 "82c7942a94bc375e43fe2b3a27996ae8302d8abb4a3a63713991cf6aefa58688"
 
       define_method(:install) do
         bin.install "swag2mcp"
@@ -19,7 +19,7 @@ class Swag2mcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.0/swag2mcp_0.1.0-alpha.0_darwin_arm64.tar.gz"
-      sha256 "dfff7cfa3143d8142e1b8ab6ce53311efd8ebec085be8637b2572fb49295c9ee"
+      sha256 "b2f1d68253a2ad652cda405b025d4b820fc9fbc9117e616eead1aa173a4220d4"
 
       define_method(:install) do
         bin.install "swag2mcp"
@@ -30,14 +30,14 @@ class Swag2mcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.0/swag2mcp_0.1.0-alpha.0_linux_amd64.tar.gz"
-      sha256 "210a6120a732d28631c8fdd6421af898ba42f2487490f7a8a4f0edc8e2a4fe1e"
+      sha256 "dc46b2bb1c526cb03a8de7e60cb5c3bb6e1ec105e7df766043ad25b7dc7965d8"
       define_method(:install) do
         bin.install "swag2mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.0/swag2mcp_0.1.0-alpha.0_linux_arm64.tar.gz"
-      sha256 "5ee107373aa5055f1a896265e29d989efaf689892923373176ef61f73daad4aa"
+      sha256 "85692bed5cb25fb23f1e896db0860a15e4a4ac25fbeea55e20d7f94e898c3243"
       define_method(:install) do
         bin.install "swag2mcp"
       end
