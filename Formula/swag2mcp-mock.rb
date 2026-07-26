@@ -11,7 +11,7 @@ class Swag2mcpMock < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.0/swag2mcp-mock_0.1.0-alpha.0_darwin_amd64.tar.gz"
-      sha256 "849160e00b586e5deca1c19dc8ecd742d60862c27be0c09ab6ba494bed069dcb"
+      sha256 "67251a4c78286847602f9632818e853f94c3dc4e91b8aeda6210d09f53e46538"
 
       define_method(:install) do
         bin.install "swag2mcp-mock"
@@ -19,7 +19,7 @@ class Swag2mcpMock < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.0/swag2mcp-mock_0.1.0-alpha.0_darwin_arm64.tar.gz"
-      sha256 "7de1d315105bc135f00fddc1c34505aeb955469a786883af6b3dd7af0601ddf1"
+      sha256 "8c7838f86fc5af3aa8798d093f42e93969fa42fe0381e314d8dafbb180769cda"
 
       define_method(:install) do
         bin.install "swag2mcp-mock"
@@ -30,14 +30,14 @@ class Swag2mcpMock < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.0/swag2mcp-mock_0.1.0-alpha.0_linux_amd64.tar.gz"
-      sha256 "d32fa154cb31692a70ebc16781dc33f56de20d4301ef9f548e1d8d9a0022cf89"
+      sha256 "e848e809cfa44318bbb2d7f23dcc102e5785a4f7b9b951a65844162f85bfe611"
       define_method(:install) do
         bin.install "swag2mcp-mock"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.0/swag2mcp-mock_0.1.0-alpha.0_linux_arm64.tar.gz"
-      sha256 "f9fbffede34fb9e1eb36d7db3d79da6631d794f61334fdff8c3c2dc389eec0ac"
+      sha256 "62447c4dda7064fdfe62a635ee9a17107e571261b470732f53dd3eb64538dfa4"
       define_method(:install) do
         bin.install "swag2mcp-mock"
       end
