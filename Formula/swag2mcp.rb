@@ -5,21 +5,21 @@
 class Swag2mcp < Formula
   desc "Bridge OpenAPI/Swagger/Postman specs with LLM agents via MCP"
   homepage "https://github.com/mmadfox/swag2mcp"
-  version "0.1.0-alpha.5"
+  version "0.1.0-beta.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.5/swag2mcp_0.1.0-alpha.5_darwin_amd64.tar.gz"
-      sha256 "8f13c43ff5e405380d2aafbd550d2ba0283b079bee11c6d364222a15961f40c5"
+      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.1/swag2mcp_0.1.0-beta.1_darwin_amd64.tar.gz"
+      sha256 "a3292bf446a8ac64719582decab4985ab8fb3d0589d87f88a3210215b93c1bb0"
 
       define_method(:install) do
         bin.install "swag2mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.5/swag2mcp_0.1.0-alpha.5_darwin_arm64.tar.gz"
-      sha256 "66cf49dc674f4cc9cebdad62fc7878f3afe84652819f6d38772365c810e5593c"
+      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.1/swag2mcp_0.1.0-beta.1_darwin_arm64.tar.gz"
+      sha256 "83cae84edce4759230d55ec2dbfd1063677f2afd24a63acf93b1891ce1b05f94"
 
       define_method(:install) do
         bin.install "swag2mcp"
@@ -29,15 +29,15 @@ class Swag2mcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.5/swag2mcp_0.1.0-alpha.5_linux_amd64.tar.gz"
-      sha256 "838bfa90924388429e9bc9b65ace50ec979962754442036b8cfdf64dfeaf65bd"
+      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.1/swag2mcp_0.1.0-beta.1_linux_amd64.tar.gz"
+      sha256 "f2ab0c4d6f529ad39678c507b0089b3dedc91a335b1ca42c0fea1f6746db6e55"
       define_method(:install) do
         bin.install "swag2mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-alpha.5/swag2mcp_0.1.0-alpha.5_linux_arm64.tar.gz"
-      sha256 "923544e49554d06425b4890519b2afc763eb4b727c963a38a8d34cf2dd631351"
+      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.1/swag2mcp_0.1.0-beta.1_linux_arm64.tar.gz"
+      sha256 "5f3a1543454eb49fe0237b0f1386850db3d5ceabc0c7eb48ee539f213888b9d9"
       define_method(:install) do
         bin.install "swag2mcp"
       end
