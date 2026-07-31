@@ -5,21 +5,21 @@
 class Swag2mcpMock < Formula
   desc "Mock server for swag2mcp API testing"
   homepage "https://github.com/mmadfox/swag2mcp"
-  version "0.1.0-beta.2"
+  version "0.1.0-beta.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.2/swag2mcp-mock_0.1.0-beta.2_darwin_amd64.tar.gz"
-      sha256 "6dd5fd3776061a3163ebdf38ada562461d02fe7d0877680c05ab1ae4b3345edc"
+      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.3/swag2mcp-mock_0.1.0-beta.3_darwin_amd64.tar.gz"
+      sha256 "f3521d014e9281bd55f4ce5037e350a1373a8cf5c7f1fc5251bca907bbaef6e3"
 
       define_method(:install) do
         bin.install "swag2mcp-mock"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.2/swag2mcp-mock_0.1.0-beta.2_darwin_arm64.tar.gz"
-      sha256 "a5540e6fe396f34685a42ddbff346c4b80446cc26823306cac7f355fb208a1af"
+      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.3/swag2mcp-mock_0.1.0-beta.3_darwin_arm64.tar.gz"
+      sha256 "9959306be58efdea340cb7aa08faf201eafd9eb2d44aa6041dff75586b9380f9"
 
       define_method(:install) do
         bin.install "swag2mcp-mock"
@@ -29,15 +29,15 @@ class Swag2mcpMock < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.2/swag2mcp-mock_0.1.0-beta.2_linux_amd64.tar.gz"
-      sha256 "c2c5c4086a0b09b841067ab9a64359d59ab22714b10288747364e5b11179d5d9"
+      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.3/swag2mcp-mock_0.1.0-beta.3_linux_amd64.tar.gz"
+      sha256 "f89a8c22c38cdb80f6a4fa35434daaeb5fcbaeb5cc62b644b6ed34cf612c3702"
       define_method(:install) do
         bin.install "swag2mcp-mock"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.2/swag2mcp-mock_0.1.0-beta.2_linux_arm64.tar.gz"
-      sha256 "0522daab825e9a5e2eb42f41d6396b71a3e393fb5f40784ca32cbf4326231715"
+      url "https://github.com/mmadfox/swag2mcp/releases/download/v0.1.0-beta.3/swag2mcp-mock_0.1.0-beta.3_linux_arm64.tar.gz"
+      sha256 "e5e6c347cb0e3af81f78bd13af93183ad75f716cd331e526c6b24db297c36ae5"
       define_method(:install) do
         bin.install "swag2mcp-mock"
       end
